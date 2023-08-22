@@ -2,9 +2,7 @@ import React from 'react'
 import './Colors.css'
 
 function Colors() {
-  return (
-    <div>Colors</div>
-  )
+  return 
 }
 
 export default Colors
