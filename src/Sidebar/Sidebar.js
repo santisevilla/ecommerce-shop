@@ -5,7 +5,6 @@ import Color from './Colors/Colors.js'
 import './Sidebar.css'
 
 function Sidebar({ handleChange }) {
-
     return <>
         <section className='sidebar'>
             <div className='logo-container'>
