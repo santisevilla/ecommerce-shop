@@ -3,6 +3,7 @@ import Navigation from './Navigation/Nav.js'
 import Product from './Products/Product.js';
 import Recommended from './Recommended/Recommended.js';
 import Sidebar from './Sidebar/Sidebar.js';
+import './index.css'
 
 //Database
 import products from '../src/db/data.js'
@@ -17,7 +18,7 @@ function App() {
     setQuery(event.target.value)
   }
 
-  const filteredItems = products.filter(product => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1))
+  const filteredItems = products.filter(product => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !== -1)
 
   //Radio filter
   const handleChange = event => {
@@ -62,7 +63,7 @@ function App() {
     <Sidebar handleChange={handleChange} />
     <Navigation query={query} handleInputChange={handleInputChange} />
     <Recommended handleClick={handleClick} />
-    <Product result={result}/>
+    <Product result={result} />
   </>
 }
 
