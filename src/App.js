@@ -60,9 +60,9 @@ function App() {
 
   return <>
     <Sidebar handleChange={handleChange} />
-    <Navigation />
-    <Recommended />
-    <Product />
+    <Navigation query={query} handleInputChange={handleInputChange} />
+    <Recommended handleClick={handleClick} />
+    <Product result={result}/>
   </>
 }
 
